@@ -16,6 +16,11 @@ class _AnimatedContainerByKtechState extends State<AnimatedContainerByKtech> {
   Widget build(BuildContext context) {
   
     return Scaffold(
+      appBar: AppBar(title:  Text(
+                            "Animated Container",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                            textAlign: TextAlign.center,
+                          ),centerTitle: true, backgroundColor:Color.fromARGB(255, 20, 108, 180)),
       backgroundColor: Colors.white,
       body: GestureDetector(
           onTap: () {
