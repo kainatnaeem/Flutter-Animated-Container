@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
-
 class AnimatedContainerByKtech extends StatefulWidget {
-
-  
+  const AnimatedContainerByKtech({super.key});
 
   @override
-  State<AnimatedContainerByKtech> createState() => _AnimatedContainerByKtechState();
+  State<AnimatedContainerByKtech> createState() =>
+      _AnimatedContainerByKtechState();
 }
 
 class _AnimatedContainerByKtechState extends State<AnimatedContainerByKtech> {
@@ -14,13 +13,15 @@ class _AnimatedContainerByKtechState extends State<AnimatedContainerByKtech> {
 
   @override
   Widget build(BuildContext context) {
-  
     return Scaffold(
-      appBar: AppBar(title:  Text(
-                            "Animated Container",
-                            style: TextStyle(color: Colors.white, fontSize: 20),
-                            textAlign: TextAlign.center,
-                          ),centerTitle: true, backgroundColor:Color.fromARGB(255, 20, 108, 180)),
+      appBar: AppBar(
+          title: const Text(
+            "Animated Container",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+          centerTitle: true,
+          backgroundColor: const Color.fromARGB(255, 20, 108, 180)),
       backgroundColor: Colors.white,
       body: GestureDetector(
           onTap: () {
@@ -36,7 +37,7 @@ class _AnimatedContainerByKtechState extends State<AnimatedContainerByKtech> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: initValue
-                        ? Color.fromARGB(255, 88, 170, 237)
+                        ? const Color.fromARGB(255, 88, 170, 237)
                         : Colors.white,
                   ),
                   // This property takes AlignmentGeometry class as the object. It controls the alignment of the child widget with the container.
@@ -49,7 +50,7 @@ class _AnimatedContainerByKtechState extends State<AnimatedContainerByKtech> {
                       Image.asset(
                         'images/kid.png',
                       ),
-                      Text(
+                      const Text(
                         "if you want to fly give up everything that weighs you down",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                         textAlign: TextAlign.center,
